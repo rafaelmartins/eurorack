@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name eurorack)(type KiCad)(uri ${KIPRJMOD}/../../../../share/kicad/eurorack.pretty)(options "")(descr "Eurorack-specific footprints (including adaptations for CNC milling)"))
+  (lib (name eurorack)(type KiCad)(uri ${KIPRJMOD}/../../../../share/kicad/eurorack.pretty)(options "")(descr "Eurorack-specific footprints (including adaptations for hand soldering)"))
 )
