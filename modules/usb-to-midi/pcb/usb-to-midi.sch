@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "usb-to-midi board"
+Title "usb-to-midi"
 Date "2021-12-13"
 Rev "1.0"
 Comp ""
@@ -133,7 +133,7 @@ L MCU_Microchip_ATmega:ATmega32U2-AU U1
 U 1 1 616DB556
 P 5800 3700
 F 0 "U1" H 5800 2211 50  0000 C CNN
-F 1 "ATmega32U2-AU" H 5800 2120 50  0000 C CNN
+F 1 "ATmega8U2-AU" H 5800 2120 50  0000 C CNN
 F 2 "eurorack:TQFP-32_7x7mm_P0.8mm_LongPads" H 5800 3700 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 5800 3700 50  0001 C CNN
 	1    5800 3700
