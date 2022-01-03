@@ -1,0 +1,17 @@
+eurorack.pretty/Jack_3.5mm_QingPu_WQP-PJ366ST_Vertical.kicad_mod:
+eurorack.pretty/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical.kicad_mod:
+
+    Copyright (c) 2021 Barwise
+
+    MIT License (https://github.com/clacktronics/AudioJacks/blob/main/LICENSE)
+
+eurorack.lib (Pico):
+eurorack.pretty/RPi_Pico_SMD.kicad_mod:
+
+    Raspberry Pi Foundation / Trading license (https://github.com/HeadBoffin/RP_Silicon_KiCad/blob/main/LICENSE)
+
+eurorack.pretty/USB_B_Vertical.kicad_mod:
+eurorack.pretty/Potentiometer_Vishay_M64Y_Horizontal.kicad_mod
+eurorack.pretty/TQFP-32_7x7mm_P0.8mm_LongPads.kicad_mod:
+
+    KiCad Libraries License (https://www.kicad.org/libraries/license/)
