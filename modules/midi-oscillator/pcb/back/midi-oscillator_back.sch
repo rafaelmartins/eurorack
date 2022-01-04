@@ -10,8 +10,8 @@ Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Released under CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+Comment4 "Designed by: Rafael G. Martins"
 $EndDescr
 NoConn ~ 3550 2200
 $Comp
