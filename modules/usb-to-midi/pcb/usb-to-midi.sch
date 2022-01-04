@@ -70,14 +70,14 @@ F 3 "~" H 2950 2550 50  0001 C CNN
 	1    2950 2550
 	0    1    1    0   
 $EndComp
-Text GLabel 6550 4400 2    50   Input ~ 0
+Text GLabel 6550 4400 2    50   Output ~ 0
 UART_TX
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 61353B09
 P 4150 4500
-F 0 "J3" H 4042 4685 50  0000 C CNN
-F 1 "DEBUG HEADER" H 4042 4594 50  0000 C CNN
+F 0 "J3" H 4068 4717 50  0000 C CNN
+F 1 "JST XH 1x2" H 4068 4626 50  0000 C CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 4150 4500 50  0001 C CNN
 F 3 "~" H 4150 4500 50  0001 C CNN
 	1    4150 4500
@@ -192,7 +192,7 @@ L Device:LED D1
 U 1 1 61C74867
 P 7700 4000
 F 0 "D1" V 7739 3882 50  0000 R CNN
-F 1 "LED" V 7648 3882 50  0000 R CNN
+F 1 "LED Red" V 7648 3882 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 7700 4000 50  0001 C CNN
 F 3 "~" H 7700 4000 50  0001 C CNN
 	1    7700 4000
@@ -201,12 +201,12 @@ $EndComp
 $Comp
 L Device:LED D2
 U 1 1 61C75707
-P 8150 4000
-F 0 "D2" V 8189 3882 50  0000 R CNN
-F 1 "LED" V 8098 3882 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 8150 4000 50  0001 C CNN
-F 3 "~" H 8150 4000 50  0001 C CNN
-	1    8150 4000
+P 8350 4000
+F 0 "D2" V 8389 3882 50  0000 R CNN
+F 1 "LED Green" V 8298 3882 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8350 4000 50  0001 C CNN
+F 3 "~" H 8350 4000 50  0001 C CNN
+	1    8350 4000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -223,17 +223,17 @@ $EndComp
 $Comp
 L Device:R R6
 U 1 1 61C770E0
-P 8150 3600
-F 0 "R6" H 8220 3646 50  0000 L CNN
-F 1 "2k2" H 8220 3555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8080 3600 50  0001 C CNN
-F 3 "~" H 8150 3600 50  0001 C CNN
-	1    8150 3600
+P 8350 3600
+F 0 "R6" H 8420 3646 50  0000 L CNN
+F 1 "2k2" H 8420 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8280 3600 50  0001 C CNN
+F 3 "~" H 8350 3600 50  0001 C CNN
+	1    8350 3600
 	1    0    0    -1  
 $EndComp
 Text GLabel 7650 3400 0    50   Input ~ 0
 LED1
-Text GLabel 8100 3400 0    50   Input ~ 0
+Text GLabel 8300 3400 0    50   Input ~ 0
 LED2
 $Comp
 L power:GND #PWR0105
@@ -251,22 +251,13 @@ Wire Wire Line
 Wire Wire Line
 	7700 3400 7700 3450
 Wire Wire Line
-	8100 3400 8150 3400
+	8300 3400 8350 3400
 Wire Wire Line
-	8150 3400 8150 3450
+	8350 3400 8350 3450
 Wire Wire Line
 	7700 3850 7700 3750
 Wire Wire Line
-	8150 3750 8150 3850
-Wire Wire Line
-	7700 4250 7700 4200
-Wire Wire Line
-	7700 4200 8150 4200
-Wire Wire Line
-	8150 4200 8150 4150
-Connection ~ 7700 4200
-Wire Wire Line
-	7700 4200 7700 4150
+	8350 3750 8350 3850
 NoConn ~ 6500 4200
 NoConn ~ 6500 4100
 NoConn ~ 6500 3500
@@ -370,12 +361,12 @@ Connection ~ 4050 2700
 NoConn ~ 6500 3200
 NoConn ~ 6500 3100
 NoConn ~ 6500 3600
-Text Notes 8900 2900 0    50   ~ 0
-output
+Text Notes 9100 2900 0    50   ~ 0
+Output
 Wire Notes Line
-	8500 3250 8500 4550
-Text Notes 8300 4500 0    50   ~ 0
-leds
+	8950 3250 8950 4550
+Text Notes 8700 4500 0    50   ~ 0
+Leds
 Wire Notes Line
 	7000 5450 3900 5450
 Wire Wire Line
@@ -384,18 +375,14 @@ Wire Wire Line
 	5250 5100 5250 5200
 Connection ~ 5700 5100
 Text Notes 6350 5400 0    50   ~ 0
-microcontroller
-Wire Notes Line
-	1900 1900 3600 1900
+Microcontroller
 Wire Notes Line
 	3600 1900 3600 3150
 Wire Notes Line
-	3600 3150 1900 3150
-Wire Notes Line
-	1900 3150 1900 1900
+	1800 3150 1800 1900
 Text Notes 3400 3100 0    50   ~ 0
 USB
-Text Label 2600 2200 0    50   ~ 0
+Text Label 2800 2100 0    50   ~ 0
 USB_CONN_D+
 Connection ~ 2200 2850
 $Comp
@@ -405,28 +392,14 @@ P 2200 2450
 AR Path="/61C21FC1" Ref="J1"  Part="1" 
 AR Path="/6175D50F/61C21FC1" Ref="J?"  Part="1" 
 F 0 "J1" H 2257 2917 50  0000 C CNN
-F 1 "USB_B" H 2257 2826 50  0000 C CNN
+F 1 "USB Type B Vertical" H 2257 2826 50  0000 C CNN
 F 2 "eurorack:USB_B_Vertical" H 2350 2400 50  0001 C CNN
 F 3 " ~" H 2350 2400 50  0001 C CNN
 	1    2200 2450
 	1    0    0    -1  
 $EndComp
-Text Label 2600 2900 0    50   ~ 0
+Text Label 2800 2950 0    50   ~ 0
 USB_CONN_D-
-Wire Wire Line
-	2600 2900 2600 2550
-Wire Wire Line
-	2600 2550 2500 2550
-Wire Wire Line
-	2800 2550 2600 2550
-Connection ~ 2600 2550
-Wire Wire Line
-	2500 2450 2600 2450
-Wire Wire Line
-	2600 2200 2600 2450
-Connection ~ 2600 2450
-Wire Wire Line
-	2600 2450 2800 2450
 $Comp
 L power:GND #PWR0103
 U 1 1 616A3D13
@@ -469,7 +442,7 @@ L Connector:AudioJack3 J2
 U 1 1 616B61A2
 P 8550 2350
 F 0 "J2" H 8270 2283 50  0000 R CNN
-F 1 "MIDI out" H 8270 2374 50  0000 R CNN
+F 1 "Thonkiconn ST" H 8270 2374 50  0000 R CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ366ST_Vertical" H 8550 2350 50  0001 C CNN
 F 3 "~" H 8550 2350 50  0001 C CNN
 	1    8550 2350
@@ -509,34 +482,13 @@ NoConn ~ 6500 4300
 NoConn ~ 6500 4700
 NoConn ~ 6500 4800
 Wire Notes Line
-	9200 2950 9200 1900
-Wire Notes Line
-	9200 1900 7300 1900
+	9450 2950 9450 1900
 Wire Notes Line
 	7300 1900 7300 2950
 Wire Notes Line
-	7300 2950 9200 2950
-Wire Notes Line
-	8500 4550 7300 4550
-Wire Notes Line
 	7300 4550 7300 3250
-Wire Notes Line
-	7300 3250 8500 3250
-$Comp
-L power:+5V #PWR0107
-U 1 1 61655010
-P 2550 2150
-F 0 "#PWR0107" H 2550 2000 50  0001 C CNN
-F 1 "+5V" H 2565 2323 50  0000 C CNN
-F 2 "" H 2550 2150 50  0001 C CNN
-F 3 "" H 2550 2150 50  0001 C CNN
-	1    2550 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 2250 2550 2250
-Wire Wire Line
-	2550 2250 2550 2150
 Wire Wire Line
 	6500 4600 6550 4600
 Wire Wire Line
@@ -614,4 +566,60 @@ Wire Notes Line
 	7000 1900 7000 5450
 Wire Notes Line
 	3900 1900 3900 5450
+Wire Wire Line
+	2500 2550 2750 2550
+Wire Wire Line
+	2500 2450 2750 2450
+$Comp
+L power:+5V #PWR0107
+U 1 1 61655010
+P 2550 2250
+F 0 "#PWR0107" H 2550 2100 50  0001 C CNN
+F 1 "+5V" V 2600 2250 50  0000 L CNN
+F 2 "" H 2550 2250 50  0001 C CNN
+F 3 "" H 2550 2250 50  0001 C CNN
+	1    2550 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2450 2750 2100
+Wire Wire Line
+	2750 2100 2800 2100
+Connection ~ 2750 2450
+Wire Wire Line
+	2750 2450 2800 2450
+Wire Wire Line
+	2750 2550 2750 2950
+Wire Wire Line
+	2750 2950 2800 2950
+Connection ~ 2750 2550
+Wire Wire Line
+	2750 2550 2800 2550
+Wire Notes Line
+	1800 1900 3600 1900
+Wire Notes Line
+	1800 3150 3600 3150
+Wire Notes Line
+	7300 3250 8950 3250
+Wire Notes Line
+	7300 4550 8950 4550
+Wire Notes Line
+	7300 2950 9450 2950
+Wire Notes Line
+	7300 1900 9450 1900
+Wire Wire Line
+	7700 4150 7700 4250
+$Comp
+L power:GND #PWR?
+U 1 1 61D92920
+P 8350 4250
+F 0 "#PWR?" H 8350 4000 50  0001 C CNN
+F 1 "GND" H 8355 4077 50  0000 C CNN
+F 2 "" H 8350 4250 50  0001 C CNN
+F 3 "" H 8350 4250 50  0001 C CNN
+	1    8350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4150 8350 4250
 $EndSCHEMATC
