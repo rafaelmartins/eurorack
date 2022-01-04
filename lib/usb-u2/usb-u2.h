@@ -1,9 +1,8 @@
 /*
  * usb-u2: A bare minimum USB stack for atmega{8,16,32}u2.
- * Copyright (C) 2021 Rafael G. Martins <rafael@rafaelmartins.eng.br>
  *
- * This program can be distributed under the terms of the BSD License.
- * See the file LICENSE.
+ * SPDX-FileCopyrightText: 2021-2022 Rafael G. Martins <rafael@rafaelmartins.eng.br>
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 
 #pragma once

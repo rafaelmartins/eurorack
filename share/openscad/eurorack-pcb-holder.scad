@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2021-2022 Rafael G. Martins <rafael@rafaelmartins.eng.br>
+ * SPDX-License-Identifier: CERN-OHL-S-2.0
+ */
+
 module eurorack_pcb_holder(hole_spacing, hole_diameter=1.8, width=5.08, height=9.5) {
     translate([width / 2, height / 2, width / 2]) {
         difference() {

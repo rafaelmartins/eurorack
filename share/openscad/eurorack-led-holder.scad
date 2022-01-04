@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2021-2022 Rafael G. Martins <rafael@rafaelmartins.eng.br>
+ * SPDX-License-Identifier: CERN-OHL-S-2.0
+ */
+
 module eurorack_led_holder(num_leds, leds_spacing=0) {
     margin = 1;
     width = 3;

@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2021-2022 Rafael G. Martins <rafael@rafaelmartins.eng.br>
+ * SPDX-License-Identifier: CERN-OHL-S-2.0
+ */
+
 // this is based on A100 spec from doepfer https://doepfer.de/a100_man/a100m_e.htm
 
 eurorack_panel_height = function() 128.5;

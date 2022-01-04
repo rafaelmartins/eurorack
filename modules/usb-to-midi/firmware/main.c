@@ -1,7 +1,7 @@
 /*
  * usb-to-midi: A simple USB to serial midi converter.
- * Copyright (C) 2021 Rafael G. Martins <rafael@rafaelmartins.eng.br>
  *
+ * SPDX-FileCopyrightText: 2021-2022 Rafael G. Martins <rafael@rafaelmartins.eng.br>
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
