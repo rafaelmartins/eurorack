@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "as3340-vco front board"
+Title "as3340-vco front"
 Date "2021-12-14"
 Rev "1.0"
 Comp ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5100 5350 0    50   Output ~ 0
+Text GLabel 5100 5450 0    50   Output ~ 0
 VTO
 $Comp
 L Mechanical:MountingHole H1
@@ -59,44 +59,44 @@ F 3 "~" H 6300 7300 50  0001 C CNN
 	1    6300 7300
 	1    0    0    -1  
 $EndComp
-Text GLabel 5100 5450 0    50   Output ~ 0
+Text GLabel 5100 5550 0    50   Output ~ 0
 VSO
-Text GLabel 5100 4650 0    50   Output ~ 0
+Text GLabel 5100 4750 0    50   Input ~ 0
 VFCI
 $Comp
 L power:-12V #PWR0121
 U 1 1 61894347
-P 5100 5150
-F 0 "#PWR0121" H 5100 5250 50  0001 C CNN
-F 1 "-12V" V 5115 5278 50  0000 L CNN
-F 2 "" H 5100 5150 50  0001 C CNN
-F 3 "" H 5100 5150 50  0001 C CNN
-	1    5100 5150
+P 5100 5250
+F 0 "#PWR0121" H 5100 5350 50  0001 C CNN
+F 1 "-12V" V 5115 5378 50  0000 L CNN
+F 2 "" H 5100 5250 50  0001 C CNN
+F 3 "" H 5100 5250 50  0001 C CNN
+	1    5100 5250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+12V #PWR0124
 U 1 1 61896B8D
-P 5100 4950
-F 0 "#PWR0124" H 5100 4800 50  0001 C CNN
-F 1 "+12V" V 5115 5078 50  0000 L CNN
-F 2 "" H 5100 4950 50  0001 C CNN
-F 3 "" H 5100 4950 50  0001 C CNN
-	1    5100 4950
+P 5100 5050
+F 0 "#PWR0124" H 5100 4900 50  0001 C CNN
+F 1 "+12V" V 5115 5178 50  0000 L CNN
+F 2 "" H 5100 5050 50  0001 C CNN
+F 3 "" H 5100 5050 50  0001 C CNN
+	1    5100 5050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0125
 U 1 1 618ABB8E
-P 4700 5200
-F 0 "#PWR0125" H 4700 4950 50  0001 C CNN
-F 1 "GND" H 4705 5027 50  0000 C CNN
-F 2 "" H 4700 5200 50  0001 C CNN
-F 3 "" H 4700 5200 50  0001 C CNN
-	1    4700 5200
+P 4700 5300
+F 0 "#PWR0125" H 4700 5050 50  0001 C CNN
+F 1 "GND" H 4705 5127 50  0000 C CNN
+F 2 "" H 4700 5300 50  0001 C CNN
+F 3 "" H 4700 5300 50  0001 C CNN
+	1    4700 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 5350 5650 0    50   ~ 0
+Text Notes 5350 5750 0    50   ~ 0
 PCB connector
 Wire Notes Line
 	6000 4450 4500 4450
@@ -259,7 +259,7 @@ L Connector:AudioJack2_SwitchT J1
 U 1 1 61ED7892
 P 3350 3350
 F 0 "J1" H 3382 3675 50  0000 C CNN
-F 1 "CV1" H 3382 3584 50  0000 C CNN
+F 1 "Thonkiconn SM" H 3382 3584 50  0000 C CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 3350 3350 50  0001 C CNN
 F 3 "~" H 3350 3350 50  0001 C CNN
 	1    3350 3350
@@ -303,7 +303,7 @@ L Connector:AudioJack2_SwitchT J2
 U 1 1 61EDF9F1
 P 3350 4200
 F 0 "J2" H 3382 4525 50  0000 C CNN
-F 1 "CV2" H 3382 4434 50  0000 C CNN
+F 1 "Thonkiconn SM" H 3382 4434 50  0000 C CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 3350 4200 50  0001 C CNN
 F 3 "~" H 3350 4200 50  0001 C CNN
 	1    3350 4200
@@ -344,8 +344,6 @@ Wire Wire Line
 NoConn ~ 3550 4300
 Text Notes 3900 4600 0    50   ~ 0
 CV inputs
-Wire Notes Line
-	3100 2900 4350 2900
 $Comp
 L Device:C C2
 U 1 1 61F44143
@@ -428,11 +426,11 @@ Wire Wire Line
 Connection ~ 9150 4450
 Text Notes 9300 5600 0    50   ~ 0
 Outputs
-Text GLabel 5100 5250 0    50   Output ~ 0
+Text GLabel 5100 5350 0    50   Output ~ 0
 VP
-Text GLabel 5100 4750 0    50   Output ~ 0
+Text GLabel 5100 4850 0    50   Input ~ 0
 VPWM
-Text GLabel 5100 4850 0    50   Output ~ 0
+Text GLabel 5100 4950 0    50   Input ~ 0
 VLFI
 $Comp
 L Amplifier_Operational:TL074 U1
@@ -593,7 +591,7 @@ L Connector:AudioJack2_SwitchT J4
 U 1 1 61F39579
 P 8600 1950
 F 0 "J4" H 8420 1883 50  0000 R CNN
-F 1 "TRIANGLE" H 8420 1974 50  0000 R CNN
+F 1 "Thonkiconn SM" H 8420 1974 50  0000 R CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 8600 1950 50  0001 C CNN
 F 3 "~" H 8600 1950 50  0001 C CNN
 	1    8600 1950
@@ -677,7 +675,7 @@ L Connector:AudioJack2_SwitchT J5
 U 1 1 61F28E53
 P 8400 3200
 F 0 "J5" H 8220 3133 50  0000 R CNN
-F 1 "SAWTOOTH" H 8220 3224 50  0000 R CNN
+F 1 "Thonkiconn SM" H 8220 3224 50  0000 R CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 8400 3200 50  0001 C CNN
 F 3 "~" H 8400 3200 50  0001 C CNN
 	1    8400 3200
@@ -806,7 +804,7 @@ L Connector:AudioJack2_SwitchT J6
 U 1 1 61A45ABE
 P 8400 4850
 F 0 "J6" H 8220 4783 50  0000 R CNN
-F 1 "PULSE" H 8220 4874 50  0000 R CNN
+F 1 "Thonkiconn SM" H 8220 4874 50  0000 R CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 8400 4850 50  0001 C CNN
 F 3 "~" H 8400 4850 50  0001 C CNN
 	1    8400 4850
@@ -868,7 +866,7 @@ L Connector:AudioJack2_SwitchT J3
 U 1 1 61B1C704
 P 3000 5250
 F 0 "J3" H 3032 5575 50  0000 C CNN
-F 1 "LINEAR" H 3032 5484 50  0000 C CNN
+F 1 "Thonkiconn SM" H 3032 5484 50  0000 C CNN
 F 2 "eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical" H 3000 5250 50  0001 C CNN
 F 3 "~" H 3000 5250 50  0001 C CNN
 	1    3000 5250
@@ -922,8 +920,6 @@ Wire Wire Line
 	3650 5250 3700 5250
 Text Notes 3800 5650 0    50   ~ 0
 Linear input
-Wire Notes Line
-	4350 4800 2750 4800
 Text GLabel 5650 2250 2    50   Output ~ 0
 VPWM
 $Comp
@@ -1040,15 +1036,11 @@ Connection ~ 7800 3200
 Wire Notes Line
 	4350 2900 4350 4650
 Wire Notes Line
-	4350 4650 3100 4650
-Wire Notes Line
-	3100 4650 3100 2900
+	3000 4650 3000 2900
 Wire Notes Line
 	4350 4800 4350 5700
 Wire Notes Line
-	4350 5700 2750 5700
-Wire Notes Line
-	2750 5700 2750 4800
+	2650 5700 2650 4800
 Wire Wire Line
 	9500 4100 9500 4050
 Wire Notes Line
@@ -1079,20 +1071,18 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x09 J7
 U 1 1 61BADC36
-P 5350 5050
-F 0 "J7" H 5430 5092 50  0000 L CNN
-F 1 "Conn_01x09" H 5430 5001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 5350 5050 50  0001 C CNN
-F 3 "~" H 5350 5050 50  0001 C CNN
-	1    5350 5050
+P 5350 5150
+F 0 "J7" H 5268 5767 50  0000 C CNN
+F 1 "Pin Header 1x9" H 5268 5676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 5350 5150 50  0001 C CNN
+F 3 "~" H 5350 5150 50  0001 C CNN
+	1    5350 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 5200 4700 5050
+	4700 5300 4700 5150
 Wire Wire Line
-	4700 5050 5150 5050
-Wire Wire Line
-	5100 5150 5150 5150
+	4700 5150 5150 5150
 Wire Wire Line
 	5100 5250 5150 5250
 Wire Wire Line
@@ -1100,17 +1090,33 @@ Wire Wire Line
 Wire Wire Line
 	5100 5450 5150 5450
 Wire Wire Line
-	5100 4950 5150 4950
+	5100 5550 5150 5550
 Wire Wire Line
-	5100 4650 5150 4650
+	5100 5050 5150 5050
 Wire Wire Line
 	5100 4750 5150 4750
 Wire Wire Line
 	5100 4850 5150 4850
+Wire Wire Line
+	5100 4950 5150 4950
 Wire Notes Line
-	4500 4450 4500 5700
+	4500 5800 6000 5800
+Text Notes 8450 1700 0    50   ~ 0
+Triangle
+Text Notes 8250 2950 0    50   ~ 0
+Sawtooth
+Text Notes 8250 4600 0    50   ~ 0
+Pulse
 Wire Notes Line
-	4500 5700 6000 5700
+	2650 5700 4350 5700
 Wire Notes Line
-	6000 5700 6000 4450
+	2650 4800 4350 4800
+Wire Notes Line
+	3000 4650 4350 4650
+Wire Notes Line
+	3000 2900 4350 2900
+Wire Notes Line
+	4500 4450 4500 5800
+Wire Notes Line
+	6000 4450 6000 5800
 $EndSCHEMATC
