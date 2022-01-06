@@ -24,28 +24,8 @@ midi_init(void)
 }
 
 
-void
-midi_task(void)
-{
-    usb_u2_endpoint_select(1);
-
-    if (!usb_u2_endpoint_out_received())
-        return;
-
-    uint8_t len = usb_u2_endpoint_out(buf, sizeof(buf));
-    if (len == 0)
-        return;
-
-    for (uint8_t i = 0; i < len; i++) {
-        PORTD |= (1 << 5);
-        midi_push_byte(buf[i]);
-        PORTD &= ~(1 << 5);
-    }
-}
-
-
-void
-midi_push_byte(uint8_t b)
+static void
+midi_push_byte(uint8_t b, bool start)
 {
     // bytes coming from usb are not raw midi bytes. usb midi spec includes a
     // byte at the beginning of the event, including the cable number and the
@@ -56,6 +36,10 @@ midi_push_byte(uint8_t b)
     static uint8_t buf[3];
     static uint8_t idx = 0;
     static uint8_t len = 0;
+
+    if (start) {
+        idx = 0;
+    }
 
     if (idx == 0) {
         // we ignore cable number. our descriptors only have one jack anyway.
@@ -99,5 +83,25 @@ midi_push_byte(uint8_t b)
             while (!(UCSR1A & (1 << TXC1)));
         }
         idx = 0;
+    }
+}
+
+
+void
+midi_task(void)
+{
+    usb_u2_endpoint_select(1);
+
+    if (!usb_u2_endpoint_out_received())
+        return;
+
+    uint8_t len = usb_u2_endpoint_out(buf, sizeof(buf));
+    if (len == 0)
+        return;
+
+    for (uint8_t i = 0; i < len; i++) {
+        PORTD |= (1 << 5);
+        midi_push_byte(buf[i], i == 0);
+        PORTD &= ~(1 << 5);
     }
 }

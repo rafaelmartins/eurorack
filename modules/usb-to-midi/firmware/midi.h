@@ -11,4 +11,3 @@
 
 void midi_init(void);
 void midi_task(void);
-void midi_push_byte(uint8_t b);
