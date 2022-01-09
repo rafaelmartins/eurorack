@@ -31,7 +31,7 @@ pot_tag_width = 2.4;
 pot_tag_length = 1.2;
 pot_tag_height = 1;
 pot_tag_from_center_x = -pot_tag_width / 2;
-pot_tag_from_center_y = 6 + pot_tag_length / 2;
+pot_tag_from_center_y = 6 - pot_tag_length / 2;
 
 difference() {
     eurorack_panel(width_in_hp, thickness);
