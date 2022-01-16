@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name eurorack)(type Legacy)(uri ${KIPRJMOD}/../../../../share/kicad/eurorack.lib)(options "")(descr ""))
+)
