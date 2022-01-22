@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "as3310-adsr back"
 Date "2022-01-08"
-Rev "1.0"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -295,7 +295,7 @@ L Device:C C2
 U 1 1 61DAD620
 P 3900 3050
 F 0 "C2" H 3786 3096 50  0000 R CNN
-F 1 "3n" H 3786 3005 50  0000 R CNN
+F 1 "3.3n" H 3786 3005 50  0000 R CNN
 F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3938 2900 50  0001 C CNN
 F 3 "~" H 3900 3050 50  0001 C CNN
 	1    3900 3050
@@ -331,43 +331,30 @@ Wire Wire Line
 Wire Wire Line
 	4050 2900 3900 2900
 Wire Wire Line
-	3800 2800 3900 2800
-Wire Wire Line
 	3900 2800 3900 2900
 Connection ~ 3900 2900
 $Comp
 L Device:R R1
 U 1 1 61DCBA6F
-P 3650 2800
-F 0 "R1" V 3857 2800 50  0000 C CNN
-F 1 "10k" V 3766 2800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3580 2800 50  0001 C CNN
-F 3 "~" H 3650 2800 50  0001 C CNN
-	1    3650 2800
-	0    -1   -1   0   
+P 3350 3050
+F 0 "R1" H 3280 3004 50  0000 R CNN
+F 1 "10k" H 3280 3095 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 3050 50  0001 C CNN
+F 3 "~" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3450 2800 3500 2800
 $Comp
 L power:GND #PWR01
 U 1 1 61DCF1B8
-P 3450 2850
-F 0 "#PWR01" H 3450 2600 50  0001 C CNN
-F 1 "GND" H 3455 2677 50  0000 C CNN
-F 2 "" H 3450 2850 50  0001 C CNN
-F 3 "" H 3450 2850 50  0001 C CNN
-	1    3450 2850
+P 3350 3250
+F 0 "#PWR01" H 3350 3000 50  0001 C CNN
+F 1 "GND" H 3355 3077 50  0000 C CNN
+F 2 "" H 3350 3250 50  0001 C CNN
+F 3 "" H 3350 3250 50  0001 C CNN
+	1    3350 3250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 2450 0    50   Input ~ 0
-GATE
-Wire Wire Line
-	3800 2450 3900 2450
-Wire Wire Line
-	3900 2450 3900 2800
-Connection ~ 3900 2800
-Wire Wire Line
-	3450 2850 3450 2800
 $Comp
 L Amplifier_Operational:TL071 U2
 U 1 1 61DE40C8
@@ -487,12 +474,6 @@ Text Notes 5300 4850 0    50   ~ 0
 Core
 Wire Notes Line
 	5550 4900 5550 2350
-Wire Notes Line
-	5550 2350 3300 2350
-Wire Notes Line
-	3300 2350 3300 4900
-Wire Notes Line
-	3300 4900 5550 4900
 $Comp
 L Device:C C6
 U 1 1 6205E6B9
@@ -757,4 +738,36 @@ F 3 "~" H 6300 7500 50  0001 C CNN
 	1    6300 7500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 61E7DD23
+P 3700 2600
+F 0 "D1" V 3746 2520 50  0000 R CNN
+F 1 "1N4148" V 3655 2520 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3700 2425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3600 2450 0    50   Input ~ 0
+GATE
+Wire Wire Line
+	3700 2750 3700 2800
+Connection ~ 3700 2800
+Wire Wire Line
+	3700 2800 3900 2800
+Wire Wire Line
+	3700 2450 3600 2450
+Wire Wire Line
+	3350 3250 3350 3200
+Wire Wire Line
+	3350 2900 3350 2800
+Wire Wire Line
+	3350 2800 3700 2800
+Wire Notes Line
+	3200 2350 3200 4900
+Wire Notes Line
+	3200 2350 5550 2350
+Wire Notes Line
+	3200 4900 5550 4900
 $EndSCHEMATC
