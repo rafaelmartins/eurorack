@@ -1,9 +1,14 @@
-(module Pad (layer F.Cu) (tedit 61B83ED7)
-  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+(footprint "Pad" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 61B83ED7)
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 26c22628-4a0e-4dcf-8945-290c462fb95d)
   )
-  (fp_text value Pad (at 0 -0.5) (layer F.Fab) hide
+  (fp_text value "Pad" (at 0 -0.5) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 3d78fd01-1cb5-4f9c-9b77-71883dabe746)
   )
-  (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask))
+  (pad "1" thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (tstamp 92b89b51-e748-46b4-bb98-97736012ad86))
 )
