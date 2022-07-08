@@ -6,8 +6,8 @@
 
   (title_block
     (title "midi-oscillator back")
-    (date "2021-12-15")
-    (rev "1.0")
+    (date "2022-07-08")
+    (rev "1.1")
     (comment 3 "Released under CERN Open Hardware Licence Version 2 - Strongly Reciprocal")
     (comment 4 "Designed by: Rafael G. Martins")
   )
@@ -1072,7 +1072,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1210,6 +1210,7 @@
       )
     )
   )
+
 
   (junction (at 144.78 102.87) (diameter 0) (color 0 0 0 0)
     (uuid 2453b881-d699-415b-9a67-56cd3d1c9c3c)
@@ -2715,7 +2716,7 @@
     (uuid 00000000-0000-0000-0000-000061bd15e6)
     (property "Reference" "U3" (id 0) (at 137.16 98.2726 0))
     (property "Value" "MCP4822" (id 1) (at 137.16 100.584 0))
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads" (id 2) (at 157.48 120.65 0)
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (id 2) (at 157.48 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf" (id 3) (at 157.48 120.65 0)
@@ -3038,7 +3039,7 @@
     (uuid 00000000-0000-0000-0000-000061e3ff8a)
     (property "Reference" "U2" (id 0) (at 137.16 55.0926 0))
     (property "Value" "MCP4822" (id 1) (at 137.16 57.404 0))
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads" (id 2) (at 157.48 77.47 0)
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (id 2) (at 157.48 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20002249B.pdf" (id 3) (at 157.48 77.47 0)
@@ -3059,7 +3060,7 @@
     (uuid 00000000-0000-0000-0000-000061e3ffc6)
     (property "Reference" "U4" (id 0) (at 184.15 57.6326 0))
     (property "Value" "24LC512" (id 1) (at 184.15 59.944 0))
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm_LongPads" (id 2) (at 184.15 69.85 0)
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (id 2) (at 184.15 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf" (id 3) (at 184.15 69.85 0)
@@ -3278,13 +3279,13 @@
       (reference "U1") (unit 1) (value "Raspberry Pi Pico") (footprint "eurorack:RPi_Pico_SMD_TH")
     )
     (path "/00000000-0000-0000-0000-000061e3ff8a"
-      (reference "U2") (unit 1) (value "MCP4822") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U2") (unit 1) (value "MCP4822") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
     (path "/00000000-0000-0000-0000-000061bd15e6"
-      (reference "U3") (unit 1) (value "MCP4822") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U3") (unit 1) (value "MCP4822") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
     (path "/00000000-0000-0000-0000-000061e3ffc6"
-      (reference "U4") (unit 1) (value "24LC512") (footprint "Package_DIP:DIP-8_W7.62mm_LongPads")
+      (reference "U4") (unit 1) (value "24LC512") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
   )
 )
