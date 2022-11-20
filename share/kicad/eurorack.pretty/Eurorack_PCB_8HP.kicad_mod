@@ -1,0 +1,23 @@
+(footprint "Eurorack_PCB_8HP" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (descr "Eurorack PCB outline - 8HP")
+  (attr board_only exclude_from_pos_files exclude_from_bom)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 95d35974-89b7-484d-972e-9ad35a53c021)
+  )
+  (fp_text value "Eurorack_PCB_8HP" (at 0 1 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp be4672ea-7674-4605-b702-59d5e4f17cdd)
+  )
+  (fp_text user "${REFERENCE}" (at 0 2.5 unlocked) (layer "F.Fab") hide
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 8c35c194-5b73-4410-9819-1767cc541ae5)
+  )
+  (fp_line (start 18.669 50.546) (end -18.669 50.546) (layer "Dwgs.User") (width 0.12) (tstamp 0f286873-5844-4095-9d25-ebd2d97b597e))
+  (fp_line (start 15.621 -53.594) (end 15.621 53.594) (layer "Dwgs.User") (width 0.12) (tstamp 56062333-c496-4ce7-9644-324915c9cd96))
+  (fp_line (start 18.669 -50.546) (end -18.669 -50.546) (layer "Dwgs.User") (width 0.12) (tstamp 8847e38e-bb97-46c4-811e-cd6164b0773d))
+  (fp_line (start -15.621 -53.594) (end -15.621 53.594) (layer "Dwgs.User") (width 0.12) (tstamp e7f8ab6d-e817-4adc-a574-a0b357dae652))
+  (fp_rect (start 18.669 53.594) (end -18.669 -53.594) (layer "Edge.Cuts") (width 0.12) (fill none) (tstamp 71b7a558-c79c-4334-9259-2f2f18e350c2))
+)
