@@ -10,6 +10,7 @@ eurorack.pretty/RPi_Pico_SMD_TH.kicad_mod:
 
     Raspberry Pi Foundation / Trading license (https://github.com/HeadBoffin/RP_Silicon_KiCad/blob/main/LICENSE)
 
+eurorack.kicad_sym (Connector_Eurorack_PSU):
 eurorack.pretty/LED_D3.0mmP2.54mm.kicad_mod:
 eurorack.pretty/USB_B_Vertical.kicad_mod:
 eurorack.pretty/Pad.kicad_mod:
